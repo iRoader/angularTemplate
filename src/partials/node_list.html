@@ -1,4 +1,14 @@
-<h1>节点列表</h1>
-<hr/>
-<a ui-sref=".list">Show List</a>
-<div ui-view></div>
+<div class="content-title">
+    <h1 class="">全球服务器节点</h1>
+</div>
+
+<div class="node-wrap">
+    <div ng-repeat="item in items" class="node state-{{item.state}}">
+        <h1>{{item.nodeName}}</h1>
+        <div class="node-info">
+            <p>正在进行的任务: <span>{{item.nowTask}}</span></p>
+            <p>已经完成的任务: <span>{{item.endTask}}</span></p>
+        </div>
+        <a ui-sref="taskList">查看更多</a>
+    </div>
+</div>

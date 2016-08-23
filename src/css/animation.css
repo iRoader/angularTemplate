@@ -1,0 +1,12 @@
+.animation {
+  width: 100px;
+  height: 100px;
+  background-color: red; }
+
+/* animation.scss */
+.pen {
+  -webkit-transform: 100px;
+  -moz-transform: 100px;
+  -ms-transform: 100px;
+  -o-transform: 100px;
+  transform: 100px; }

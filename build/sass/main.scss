@@ -1,0 +1,69 @@
+@import '_reset';
+
+.node-list{
+	.node-header{
+		padding-right: 15px;
+		padding-left: 15px;
+		margin: 15px 0;
+	}
+	.node-header h1{
+		width: 100%;
+		background-color: #00CC99;
+		line-height: 1.7;
+		font-size: 24px;
+		margin: 8px 0;
+	}
+	.node-1{
+		height: 300px;
+		background-color: red;
+	}
+	.node-2{
+		height: 300px;
+		background-color: blue;
+		padding: 0 16px;
+	}
+	.node-3{
+		height: 300px;
+		background-color: #0ff;
+	}
+	.node-list{
+		margin: 8px auto;
+		padding: 8px 0;
+		color: #fff;
+		box-shadow: 0 6px 8px #6c6c6d;
+
+		h1{
+			margin: 0;
+			padding: 8px;
+			font-size: 24px;
+		}
+
+		a{
+			color: #FFF;
+			padding: 4px 12px;
+			text-decoration: none;
+			cursor: pointer;
+		}
+	}
+	.state-0{
+		background-color: #00CC99;
+	}
+	.state-1{
+		background-color: #9c9e9e;
+	}
+	.state-2{
+		background-color: #de4f4f;
+	}
+	.state-3{
+		background-color: #32a6ea;
+	}
+	.node-info{
+		border-bottom: 1px solid #fff;
+		padding: 8px 0;
+		margin-bottom: 4px;
+	}
+	.node-info p{
+		line-height: 1.7;
+	}
+}
+

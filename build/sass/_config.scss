@@ -1,0 +1,66 @@
+// 配置颜色
+	   $bg: #E0E0E0;
+$linkColor: #08c;
+
+// margin 配置
+@mixin margin($top: 8px, $right: 0px, $bottom: 8px, $left: 0px) {
+    margin: $top $right $bottom $left !important;
+}
+@mixin padding($top: 8px, $right: 8px, $bottom: 8px, $left: 8px) {
+    padding: $top $right $bottom $left !important;
+}
+
+.mtb8{
+	@include margin;
+}
+.mlr8{
+	@include margin($top: 0px, $right: 8px, $bottom: 0px, $left: 8px)
+}
+.mt8{
+	@include margin($top: 8px, $right: 0px, $bottom: 0px, $left: 0px)
+}
+.mb8{
+	@include margin($top: 0px, $right: 0px, $bottom: 8px, $left: 0px)
+}
+.mr8{
+	@include margin($top: 0px, $right: 8px, $bottom: 0px, $left: 0px)
+}
+.ml8{
+	@include margin($top: 0px, $right: 0px, $bottom: 0px, $left: 8px)
+}
+
+.mtb16{
+	@include margin($top: 16px, $right: 16px, $bottom: 16px, $left: 16px);
+}
+.mt16{
+	@include margin($top: 16px, $right: 0px, $bottom: 0px, $left: 0px)
+}
+.mb16{
+	@include margin($top: 0px, $right: 0px, $bottom: 16px, $left: 0px)
+}
+.mr16{
+	@include margin($top: 0px, $right: 16px, $bottom: 0px, $left: 0px)
+}
+.ml16{
+	@include margin($top: 0px, $right: 0px, $bottom: 0px, $left: 16px)
+}
+
+.ptb8{
+	@include padding;
+}
+.plr8{
+	@include padding($top: 0px, $right: 8px, $bottom: 0px, $left: 8px)
+}
+.pt8{
+	@include padding($top: 8px, $right: 0px, $bottom: 0px, $left: 0px)
+}
+.pb8{
+	@include padding($top: 0px, $right: 0px, $bottom: 8px, $left: 0px)
+}
+.pr8{
+	@include padding($top: 0px, $right: 8px, $bottom: 0px, $left: 0px)
+}
+.pl8{
+	@include padding($top: 0px, $right: 0px, $bottom: 0px, $left: 8px)
+}
+

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="../libs/angular.js"></script>
+    
+</head>
+
+<body ng-app="myApp">
+
+
+    <div ng-controller="myController">
+        <h1>{{num | currency : '¥'}}</h1>
+        <h1>{{date | date : 'yyyy-MM-dd hh:mm:ss'}}</h1>
+        <div ng-repeat="item in childrenArray | filter : 4 ">
+            <h1>{{item.name}} </h1>
+        </div>
+        
+        <input type="text" ng-model="expr" placeholder="输入内容">
+        <h2>{{parseValue}}</h2>
+    </div>
+
+
+    
+
+<script>
+    angular.module('myApp', [])
+        .controller('myController', function($scope, $parse){
+            $scope.num = 12345;
+            $scope.date = new Date();
+            $scope.childrenArray = [
+                {name:'kimi',age:3},
+                {name:'cindy',age:4},
+                {name:'anglar',age:4},
+                {name:'shitou',age:6},
+                {name:'tiantian',age:5}
+            ];
+            $scope.func = function(e){return e.age>4;}
+            $scope.$watch('expr', function(newVal, oldVal, scope){
+                console.log(newVal)
+                console.log(oldVal)
+                console.log(scope)
+                if (newVal != oldVal) {
+                    var parseFun = $parse('expr');
+                    $scope.parseValue = parseFun(scope);
+                }
+            })
+        })
+</script>    
+    
+    
+
+</body>
+
+</html>

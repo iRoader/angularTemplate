@@ -1,0 +1,26 @@
+@import 'mixin';
+
+.kira{
+	@include display;
+}
+.f1{
+	@include flex(1);
+}
+.f2{
+	@include flex(2);
+}
+.f3{
+	@include flex(3);
+}
+.f4{
+	@include flex(4);
+}
+.f5{
+	@include flex(5);
+}
+.f20{
+	@include flex(20%);
+}
+.f25{
+	@include flex(25%);
+}

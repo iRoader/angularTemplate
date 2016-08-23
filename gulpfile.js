@@ -1,5 +1,17 @@
 var gulp = require('gulp'),
-    connect = require('gulp-connect');
+    connect = require('gulp-connect'),
+    sass = require('gulp-sass');
+
+// 编译 sass 文件
+gulp.task('buildSass', function(){
+	gulp.src('build/sass/*.scss')
+		.pipe(sass())
+		.pipe(gulp.dest('src/css'));
+})
+
+gulp.task('sassWatch', function(){
+	gulp.watch('build/**/*.scss', ['buildSass']);
+})
 
 
 
@@ -7,8 +19,8 @@ var gulp = require('gulp'),
 gulp.task('connect', function(){
 	connect.server({
 		root: 'src',
-		port: '9000',
-		livereload: true,
+		port: '8000',
+		livereload: true
 	})
 })
 
@@ -17,4 +29,4 @@ gulp.task('html', function(){
 		.pipe(connect.reload());
 })
 
-gulp.task('default', ['connect'])
+gulp.task('default', ['connect', 'sassWatch'])

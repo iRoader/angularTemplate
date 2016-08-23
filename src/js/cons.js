@@ -1,0 +1,1 @@
+PARTIALS_PATH = "template/";
