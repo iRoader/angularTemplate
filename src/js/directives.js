@@ -1,4 +1,4 @@
-angular.module('data.directive')
+angular.module('kira.directive')
 	.directive('headerTpl', function(){
 		console.log('---------header----------')
 		return {

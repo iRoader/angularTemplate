@@ -1,4 +1,4 @@
-angular.module('data.controller')
+angular.module('kira.controller')
 	.controller('nodeListCtrl', nodeListCtrlFun);
 
 nodeListCtrlFun.$inject = ['$scope', 'httpApiService'];

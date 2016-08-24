@@ -1,4 +1,9 @@
-angular.module('dataApp', ['ui.router', 'data.controller', 'data.directive', 'data.service'])
+angular.module('kiraApp', [
+        'ui.router', 
+        'kira.controller', 
+        'kira.directive', 
+        'kira.service'
+    ])
 
 
     .config(function($stateProvider, $urlRouterProvider) {

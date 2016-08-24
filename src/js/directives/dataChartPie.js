@@ -1,4 +1,4 @@
-angular.module('data.directive')
+angular.module('kira.directive')
     .directive("chartPie", dataChartPieFun);
 
 /**

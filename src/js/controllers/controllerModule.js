@@ -1,2 +1,2 @@
 //声明controller模块
-angular.module('data.controller', [])
+angular.module('kira.controller', [])

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="kiraApp">
 
 <head>
     <meta charset="UTF-8">
@@ -11,7 +11,7 @@
     
 </head>
 
-<body ng-app="dataApp">
+<body ng-controller="kiraCtrl">
 
     <div class="kira" ui-view></div>
 
@@ -34,6 +34,7 @@
     <script src="js/services/httpApiService.js"></script>
     
     <!-- 控制器 -->
+    <script src="js/controller.js"></script>
     <script src="js/controllers/controllers.js"></script>
     <script src="js/controllers/nodeListCtrl.js"></script>
     <script src="js/controllers/taskListCtrl.js"></script>

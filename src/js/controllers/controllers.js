@@ -1,4 +1,4 @@
-// angular.module('data.controller')
+// angular.module('kira.controller')
 //     .controller('dataCtrl', AppCtrlFunc);
 // AppCtrlFunc.$inject = ['$scope','$state'];
 // function AppCtrlFunc($scope,$state){
@@ -12,7 +12,7 @@
 //     	console.log("-----------------------------------")
 //     });
 
-angular.module('data.controller')
+angular.module('kira.controller')
 	.controller('nodeCtrl', nodeCtrlFun);
 
 nodeCtrlFun.$inject = ['$scope', 'httpApiService'];

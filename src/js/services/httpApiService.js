@@ -1,4 +1,4 @@
-// angular.module('data.service')
+// angular.module('kira.service')
 //  .factory('httpApiService', function($http){
 //      console.log("-----------------------------------");
 //      var sendRequest = function(options){
@@ -17,7 +17,7 @@
 
 //  })
 
-angular.module('data.service')
+angular.module('kira.service')
     .factory('httpApiService', apiServicesFun);
 
 apiServicesFun.$inject = ['$http'];
