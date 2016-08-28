@@ -3,6 +3,46 @@
 .kira{
 	@include display;
 }
+.k1{
+	@include flex(1);
+}
+
+// 九宫格布局
+.kira-grid{
+	display: flex;
+	flex-wrap: wrap;
+	overflow: hidden;
+
+	.grid{
+		width: 100%;
+		padding: 0 8px;
+	}
+}
+.kira-aside{
+	.aside-wrap{
+		display: none;
+	}
+}
+@media (min-width: 768px) {
+	body{
+	}
+	.kira-grid{
+		flex-wrap: wrap;
+		.grid{
+			width: 25%;
+			padding: 0 8px;
+		}
+	}
+
+	.kira-aside{
+		.aside-wrap{
+			display: block;
+		}
+	}
+	
+}
+
+
 .f1{
 	@include flex(1);
 }

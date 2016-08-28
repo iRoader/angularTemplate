@@ -18,8 +18,7 @@ angular.module('kiraApp', [
 
             .state('app.dashboard', {
                 url: "/dashboard",
-                templateUrl: "partials/dashboard.html",
-                controller: 'nodeCtrl'
+                templateUrl: "partials/dashboard.html"
             })
 
             .state('app.chartDirective', {
