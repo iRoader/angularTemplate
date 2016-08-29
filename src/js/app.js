@@ -21,11 +21,11 @@ angular.module('kiraApp', [
                 templateUrl: "partials/dashboard.html"
             })
 
-            .state('app.chartDirective', {
-                url: "/chartDirective",
-                templateUrl: "partials/chartDirective.html",
-                controller: 'chartDirectiveCtrl'
-            })
+            // .state('app.chartDirective', {
+            //     url: "/chartDirective",
+            //     templateUrl: "partials/chartDirective.html",
+            //     controller: 'chartDirectiveCtrl'
+            // })
 
             .state('app.nodeList', {
                 url: "/nodeList",
@@ -41,13 +41,13 @@ angular.module('kiraApp', [
             // })
 
             .state('app.taskList', {
-                url: "/taskList",
+                url: "/taskList/:nodename",
                 templateUrl: "partials/task_list.html",
                 controller: 'taskListCtrl'
             })
 
             .state('app.taskInfo', {
-                url: "/taskInfo",
+                url: "/taskInfo/:id",
                 templateUrl: "partials/task_info.html",
                 controller: 'taskInfoCtrl'
             })

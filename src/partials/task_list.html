@@ -1,8 +1,11 @@
-<h3>任务列表</h3>
+<div class="content-title">
+    <h1 class="">任务列表</h1>
+</div>
 
- <chart-pie></chart-pie>
+<div class="list-wrap">
+    <!-- <chart-pie></chart-pie> -->
 
-<div class="panel panel-default">
+    <div class="panel panel-default">
     <div class="panel-heading">任务列表</div>
     <table class="table">
         <thead>
@@ -15,27 +18,18 @@
             </tr>
         </thead>
         <tbody class="table-operate">
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>2</td>
-                <td>3</td>
-                <td>4</td>
-                <td>5</td>
+            <tr ng-repeat="item in items" ng-click="goInfo(item.id)">
+                <td>{{item.id}}</td>
+                <td>{{item.clone}}</td>
+                <td>{{item.resource}}</td>
+                <td>{{item.consume}}</td>
+                <td>{{item.state}}</td>
             </tr>
         </tbody>
     </table>
 </div>
+
+</div>
+
+ 
+
