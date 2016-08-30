@@ -1,17 +1,22 @@
 @import 'mixin';
 
+// 图表涉及的样式
 .dash-wrap{
-
-	background-color: #FFF;
-	border: 1px solid #eeeeee;
 	width: 100%;
+	padding: 16px;
 	
+	// 折线图
+	.line-wrap{
+		background-color: #FFF !important;
+	}
+
+	// 饼状图
 
     .chart-panel {
 	
 	}
 
-	// .line-wrap{
+	// .line-wrap{`
 	// 	background-color: #FFF;
 	// 	border: 1px solid #eeeeee;
 	// 	display: inline-block;

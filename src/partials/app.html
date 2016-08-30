@@ -1,10 +1,12 @@
 <!-- navbar -->
-<div ng-include=" 'template/blocks/header.html' " class="kira-header" class=""></div>
+<div class="kira-header" ng-include=" 'template/blocks/header.html' "></div>
 
-<!-- asidle -->
-<div ng-include=" 'template/blocks/aside.html' " class="kira-aside"></div>
+<div class="kira-wrap">
+	<div class="kira-aside" ng-include=" 'template/blocks/aside.html' "></div>
 
-<!-- content -->
-<div class="kira-content f1" ui-view></div>
+	<div class="kira-content" ui-view></div>
+</div>
+
+
 
 

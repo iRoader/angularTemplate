@@ -91,99 +91,10 @@
   flex: 25%; }
 
 .dash-wrap {
-  background-color: #FFF;
-  border: 1px solid #eeeeee;
-  width: 100%; }
-
-html {
   width: 100%;
-  height: 100%; }
-
-body {
-  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #58666e;
-  background-color: transparent;
-  -webkit-font-smoothing: antialiased;
-  line-height: 1.42857143; }
-
-body {
-  background-color: #f0f3f4 !important; }
-
-.c-f {
-  color: #FFF !important; }
-
-.b-r {
-  border-right: 1px solid #dee5e7; }
-
-.bg-light {
-  background-color: #dde6e9; }
-
-.bg-white {
-  background-color: #fff; }
-
-.line {
-  width: 100%;
-  height: 2px;
-  margin: 10px 0;
-  font-size: 0;
-  overflow: hidden;
-  background-color: #131e26; }
-
-.kira-header .header-wrap {
-  position: fixed;
-  left: 0;
-  top: 0;
-  right: 0;
-  background-color: #1199c4;
-  z-index: 999; }
-
-.kira-header .header-title {
-  width: 200px;
-  height: 50px;
-  color: #FFF;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -moz-box;
-  display: -moz-flex;
-  display: -ms-flexbox;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 18px; }
-
-.kira-aside .aside-wrap {
-  width: 200px;
-  padding-top: 50px;
-  border-right: 1px solid #dee5e7;
-  background-color: #1c2b36; }
-
-.kira-aside .aside-user {
-  width: 100%; }
-
-.kira-aside .aside-avatar {
-  padding: 16px;
-  text-align: center; }
-  .kira-aside .aside-avatar .user-avatar {
-    display: block;
-    width: 96px;
-    margin: 0 auto; }
-  .kira-aside .aside-avatar img {
-    height: auto;
-    width: 100%;
-    border-radius: 50%;
-    vertical-align: middle; }
-  .kira-aside .aside-avatar .avatar-name {
-    width: 100%;
-    text-decoration: none;
-    color: #666; }
-  .kira-aside .aside-avatar .title {
-    color: #bfd1de !important;
-    margin: 10px 0 0;
-    font-weight: bold; }
-  .kira-aside .aside-avatar .sub {
-    font-size: 12px;
-    color: #507b9b !important; }
+  padding: 16px; }
+  .dash-wrap .line-wrap {
+    background-color: #FFF !important; }
 
 .nav-wrap {
   text-align: center; }
@@ -194,15 +105,6 @@ body {
   .nav-wrap li a:hover {
     background-color: #16323d;
     color: #fff; }
-
-.kira-content {
-  padding-top: 50px; }
-  .kira-content .content-title {
-    background-color: #FFF;
-    padding: 14px 20px;
-    font-size: 20px;
-    color: #58666e;
-    border-bottom: 1px solid #dee5e7; }
 
 .node-wrap {
   padding: 14px; }

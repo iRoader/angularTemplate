@@ -64,3 +64,15 @@ $linkColor: #08c;
 	@include padding($top: 0px, $right: 0px, $bottom: 0px, $left: 8px)
 }
 
+.c-f{
+	color: #FFF !important;
+}
+.b-r {
+    border-right: 1px solid #dee5e7;
+}
+.bg-light {
+    background-color: #dde6e9;
+}
+.bg-white{
+	background-color: #fff;
+}

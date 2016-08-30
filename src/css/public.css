@@ -1,0 +1,110 @@
+html {
+  width: 100%;
+  height: 100%; }
+
+body {
+  font-family: "Source Sans Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #58666e;
+  background-color: transparent;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.42857143;
+  width: 100%;
+  height: 100%; }
+
+body {
+  background-color: #f0f3f4 !important; }
+
+.kira-header .header-wrap {
+  position: fixed;
+  left: 0;
+  top: 0;
+  right: 0;
+  background-color: #1199c4;
+  z-index: 999; }
+
+.kira-header .header-title {
+  width: 200px;
+  height: 50px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px; }
+  .kira-header .header-title a {
+    color: #FFF; }
+
+.kira-wrap {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -moz-box;
+  display: -moz-flex;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  height: 100%; }
+
+.kira-aside {
+  width: 200px;
+  position: fixed;
+  height: 100%;
+  overflow: scroll;
+  background-color: #1c2b36;
+  border-right: 1px solid #dee5e7; }
+  .kira-aside .aside-wrap {
+    width: 100%;
+    padding-top: 50px; }
+  .kira-aside .aside-user {
+    width: 100%; }
+  .kira-aside .aside-avatar {
+    padding: 16px;
+    text-align: center; }
+    .kira-aside .aside-avatar .user-avatar {
+      display: block;
+      width: 96px;
+      margin: 0 auto; }
+    .kira-aside .aside-avatar img {
+      height: auto;
+      width: 100%;
+      border-radius: 50%;
+      vertical-align: middle; }
+    .kira-aside .aside-avatar .avatar-name {
+      width: 100%;
+      text-decoration: none;
+      color: #666; }
+    .kira-aside .aside-avatar .title {
+      color: #bfd1de !important;
+      margin: 10px 0 0;
+      font-weight: bold; }
+    .kira-aside .aside-avatar .sub {
+      font-size: 12px;
+      color: #507b9b !important; }
+
+.line {
+  width: 100%;
+  height: 2px;
+  margin: 10px 0;
+  font-size: 0;
+  overflow: hidden;
+  background-color: #131e26; }
+
+.kira-content {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+  -moz-box-flex: 1;
+  -moz-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  margin-left: 200px;
+  padding-top: 50px;
+  width: 100%; }
+  .kira-content .content-title {
+    background-color: #FFF;
+    padding: 14px 20px;
+    font-size: 20px;
+    color: #58666e;
+    border-bottom: 1px solid #dee5e7; }

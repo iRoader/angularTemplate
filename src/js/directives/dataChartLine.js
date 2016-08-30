@@ -13,7 +13,8 @@ function dataChartPieFun(){
 	return {
 			restrict: 'AE',
 			replace: 'true',
-			templateUrl: PARTIALS_PATH + 'echarts-templ/chart_line.html',
+			template: '<div id="main" class="line-wrap" style="width:100%; height:320px;"></div>',
+			// templateUrl: PARTIALS_PATH + 'echarts-templ/chart_line.html',
 			link: function(scope){
 
 				console.log('---------link----------')
